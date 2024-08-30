@@ -9,28 +9,142 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: "Hind Siliguri", system-ui;
+        }
+    </style>
 </head>
 <body>
-    <header class="header-area">
-        <div class="container w-5/6 mx-auto">
-            <div class="top-bar border border-solid border-b-gray-300">
-                <div class="top-item">
-                    <p> <i class="fa-solid fa-phone"></i> <a href="tel: 01619756262"> 01619-756262 </a> </p>
+    <header class="header-area mb-4">
+        <div class="container mx-auto">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4 6h16M4 12h16M4 18h7" />
+                      </svg>
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                      <li><a>Homepage</a></li>
+                      <li><a>Portfolio</a></li>
+                      <li><a>About</a></li>
+                    </ul>
+                  </div>
                 </div>
-            </div> <!-- top-item -->
-            <div class="header">
-                <div class="logo">
-                    <a href="#"><img src="images/logo.jpg" alt="Logo"></a>
+                <div class="navbar-center">
+                  <a class="btn btn-ghost text-xl"> মিসবাহ মডেল স্কুল </a>
                 </div>
-            </div>
+                <div class="navbar-end">
+                  <button class="btn btn-ghost btn-circle">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor">
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                  </button>
+                  <button class="btn btn-ghost btn-circle">
+                    <div class="indicator">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+                      </svg>
+                      <span class="badge badge-xs badge-primary indicator-item"></span>
+                    </div>
+                  </button>
+                </div>
+              </div>
         </div>
     </header>
 
     <section class="banner-section">
-        <div class="container w-5/6 mx-auto">
-            <div class="banner text-center">
-                <h1> দুনিয়ার কল্যান <br> আখিরাতে মুক্তি </h1>
+        <div class="container mx-auto" style="background-image: url(images/banner-one.jpg);">
+            <div class="hero">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-neutral-content text-center py-10">
+                <div class="max-w-md">
+                <h1 class="mb-5 text-3xl font-bold">সন্তান আপনার, তাদের মেধার  সুষ্ঠ বিকাশের দায়িত্ব আমাদের </h1>
+                
+                <button class="btn btn-success text-xl text-white">বিস্তারিত জানুন</button>
+                </div>
+            </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="features-area">
+        <div class="container w-11/12 mx-auto">
+            <div class="divider divider-success"> আমাদের সম্পর্কে </div>
+            <h2 class="text-center font-bold text-2xl"> কেন ভর্তি হবেন? </h2>
+            <div class="features grid grid-cols-2 gap-3">
+
+                <div class="card col-span-1 bg-base-100 shadow-xl">
+                    <div class="card-body items-center text-center">
+                        <i class="fa-solid fa-user text-5xl"></i>
+                        <p>অভিজ্ঞ শিক্ষকমন্ডলী দ্বারা পরিচালিত</p>
+                    </div>
+                </div>
+                <div class="card col-span-1 bg-base-100 shadow-xl">
+                    <div class="card-body items-center text-center">
+                        <i class="fa-solid fa-user text-5xl"></i>
+                        <p> সার্বক্ষনিক বিদ্যুত ব্যবস্থা এবং CCTV ক্যামেরা দ্বারা নিয়ন্ত্রিত </p>
+                    </div>
+                </div>
+                <div class="card col-span-1 bg-base-100 shadow-xl">
+                    <div class="card-body items-center text-center">
+                        <i class="fa-solid fa-user text-5xl"></i>
+                        <p> একদম শুরু থেকে শুদ্ধভাবে কোরআন শেখানো </p>
+                    </div>
+                </div>
+                <div class="card col-span-1 bg-base-100 shadow-xl">
+                    <div class="card-body items-center text-center">
+                        <i class="fa-solid fa-user text-5xl"></i>
+                        <p> ইংরেজি ভাষার উপর বিশেষ গুরুত্বারোপ </p>
+                    </div>
+                </div>
+                <div class="card col-span-1 bg-base-100 shadow-xl">
+                    <div class="card-body items-center text-center">
+                        <i class="fa-solid fa-user text-5xl"></i>
+                        <p> যাকাতপ্রাপ্ত অভিভাবকদের সন্তানদের জন্য স্কলারশীপ </p>
+                    </div>
+                </div>
+                <div class="card col-span-1 bg-base-100 shadow-xl">
+                    <div class="card-body items-center text-center">
+                        <i class="fa-solid fa-user text-5xl"></i>
+                        <p> শিক্ষার্থীর সালাত প্রশিক্ষণ কোর্স দেওয়া </p>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
